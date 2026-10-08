@@ -1,0 +1,275 @@
+[
+  {
+    "seed": 17,
+    "method": "float32",
+    "bits": 32,
+    "timing": {
+      "median_ms": 340.2961,
+      "p25_ms": 183.9253,
+      "p75_ms": 525.6864,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 17,
+    "method": "weight-mse",
+    "bits": 8,
+    "timing": {
+      "median_ms": 138.7011,
+      "p25_ms": 96.139,
+      "p75_ms": 198.6732,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 17,
+    "method": "calibration-logits",
+    "bits": 8,
+    "timing": {
+      "median_ms": 91.3037,
+      "p25_ms": 73.626,
+      "p75_ms": 127.9086,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 17,
+    "method": "weight-mse",
+    "bits": 4,
+    "timing": {
+      "median_ms": 93.3871,
+      "p25_ms": 80.6311,
+      "p75_ms": 120.4488,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 17,
+    "method": "calibration-logits",
+    "bits": 4,
+    "timing": {
+      "median_ms": 83.8124,
+      "p25_ms": 62.0736,
+      "p75_ms": 108.0514,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 17,
+    "method": "weight-mse",
+    "bits": 3,
+    "timing": {
+      "median_ms": 58.2404,
+      "p25_ms": 41.8326,
+      "p75_ms": 82.891,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 17,
+    "method": "calibration-logits",
+    "bits": 3,
+    "timing": {
+      "median_ms": 67.9117,
+      "p25_ms": 59.5622,
+      "p75_ms": 83.6081,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 43,
+    "method": "float32",
+    "bits": 32,
+    "timing": {
+      "median_ms": 193.2286,
+      "p25_ms": 171.2959,
+      "p75_ms": 228.3785,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 43,
+    "method": "weight-mse",
+    "bits": 8,
+    "timing": {
+      "median_ms": 185.4542,
+      "p25_ms": 141.092,
+      "p75_ms": 224.9016,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 43,
+    "method": "calibration-logits",
+    "bits": 8,
+    "timing": {
+      "median_ms": 195.9027,
+      "p25_ms": 174.3855,
+      "p75_ms": 226.1381,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 43,
+    "method": "weight-mse",
+    "bits": 4,
+    "timing": {
+      "median_ms": 159.6547,
+      "p25_ms": 133.5212,
+      "p75_ms": 182.7048,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 43,
+    "method": "calibration-logits",
+    "bits": 4,
+    "timing": {
+      "median_ms": 174.4619,
+      "p25_ms": 155.222,
+      "p75_ms": 205.137,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 43,
+    "method": "weight-mse",
+    "bits": 3,
+    "timing": {
+      "median_ms": 161.2675,
+      "p25_ms": 118.8178,
+      "p75_ms": 196.9297,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 43,
+    "method": "calibration-logits",
+    "bits": 3,
+    "timing": {
+      "median_ms": 140.1541,
+      "p25_ms": 112.8275,
+      "p75_ms": 183.8499,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 91,
+    "method": "float32",
+    "bits": 32,
+    "timing": {
+      "median_ms": 120.9839,
+      "p25_ms": 111.1466,
+      "p75_ms": 141.8098,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 91,
+    "method": "weight-mse",
+    "bits": 8,
+    "timing": {
+      "median_ms": 51.8304,
+      "p25_ms": 46.8235,
+      "p75_ms": 58.8649,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 91,
+    "method": "calibration-logits",
+    "bits": 8,
+    "timing": {
+      "median_ms": 46.9498,
+      "p25_ms": 43.2489,
+      "p75_ms": 56.2627,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 91,
+    "method": "weight-mse",
+    "bits": 4,
+    "timing": {
+      "median_ms": 59.7921,
+      "p25_ms": 52.2898,
+      "p75_ms": 72.7683,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 91,
+    "method": "calibration-logits",
+    "bits": 4,
+    "timing": {
+      "median_ms": 37.8476,
+      "p25_ms": 31.6022,
+      "p75_ms": 44.4418,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 91,
+    "method": "weight-mse",
+    "bits": 3,
+    "timing": {
+      "median_ms": 46.9953,
+      "p25_ms": 35.4723,
+      "p75_ms": 56.8635,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  },
+  {
+    "seed": 91,
+    "method": "calibration-logits",
+    "bits": 3,
+    "timing": {
+      "median_ms": 42.456,
+      "p25_ms": 33.6791,
+      "p75_ms": 51.0152,
+      "repeats": 41,
+      "batch_samples": 367,
+      "scope": "in-memory complete batch forward pass; packed includes unpack + dequantize + float32 matmul; disk loading excluded"
+    }
+  }
+]

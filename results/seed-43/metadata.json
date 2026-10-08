@@ -1,0 +1,123 @@
+{
+  "seed": 43,
+  "epochs": 350,
+  "hidden": 48,
+  "architecture": [
+    64,
+    48,
+    10
+  ],
+  "dtype": "float32",
+  "optimizer": "NumPy Adam",
+  "learning_rate": ".008, multiplied by .35 after 70% of fixed epochs",
+  "l2": 0.0001,
+  "training_seconds": 297.3575605000369,
+  "split_sizes": {
+    "train": 1164,
+    "calibration": 266,
+    "test": 367
+  },
+  "split_sha256": "ed1cad3d89540875f984128d3a90cb2e61212d8ccf254af26079586e4065ed2c",
+  "data": {
+    "name": "scikit-learn bundled digits",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html",
+    "upstream_dataset": "UCI Optical Recognition of Handwritten Digits",
+    "uci_url": "https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits",
+    "dataset_version": "scikit-learn 1.9.1",
+    "loader": "NumPy parser of official bundled digits.csv.gz",
+    "file_provenance": {
+      "source_url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.9.1/sklearn/datasets/data/digits.csv.gz",
+      "source_release": "scikit-learn 1.9.1",
+      "sha256": "09f66e6debdee2cd2b5ae59e0d6abbb73fc2b0e0185d2e1957e9ebb51e23aa22",
+      "bytes": 57523
+    },
+    "samples": 1797,
+    "features": 64,
+    "classes": 10,
+    "pixel_normalization": "pixel / 16",
+    "normalized_data_sha256": "8b3b6ae90863430bdef06a3f7d1ec2f6a905a53d3375655b18cf63780ad98772",
+    "selection": "Complete bundled load_digits dataset; stratified random split, not official UCI partition."
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.4241334199905396,
+      "train_accuracy": 0.6812714776632303
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.0640963464975357,
+      "train_accuracy": 0.9922680412371134
+    },
+    {
+      "epoch": 51,
+      "train_loss": 0.035024262964725494,
+      "train_accuracy": 0.9982817869415808
+    },
+    {
+      "epoch": 76,
+      "train_loss": 0.027113493531942368,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 101,
+      "train_loss": 0.02371310070157051,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 126,
+      "train_loss": 0.024589113891124725,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 151,
+      "train_loss": 0.021571697667241096,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 176,
+      "train_loss": 0.020793015137314796,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 201,
+      "train_loss": 0.020219024270772934,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 226,
+      "train_loss": 0.020151158794760704,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 251,
+      "train_loss": 0.019403863698244095,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 276,
+      "train_loss": 0.01933944970369339,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 301,
+      "train_loss": 0.019201304763555527,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 326,
+      "train_loss": 0.01946720853447914,
+      "train_accuracy": 1.0
+    },
+    {
+      "epoch": 350,
+      "train_loss": 0.019153522327542305,
+      "train_accuracy": 1.0
+    }
+  ],
+  "baseline_train_accuracy": 1.0,
+  "baseline_calibration_accuracy": 0.981203007518797,
+  "baseline_test_accuracy": 0.9782016348773842,
+  "selection_policy": "Fixed training epochs; no test or calibration early stopping. Calibration used only for clipping selection. Test used only for final evaluation.",
+  "training_seconds_scope": "MLP training and baseline NPZ serialization"
+}

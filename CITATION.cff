@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "TinyQuant Lab"
+authors:
+  - given-names: "Kyunghan"
+    family-names: "Bae"
+version: "0.1.0"
+date-released: "2026-10-08"
+url: "https://github.com/qorud02/tinyquant-lab"
+repository-code: "https://github.com/qorud02/tinyquant-lab"
+license: MIT
+abstract: "A NumPy experiment tool for small-model weight quantization, packed low-bit storage and held-out calibration clipping."

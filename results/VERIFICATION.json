@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "models_checked": 21,
+  "checks": [
+    {
+      "seed": 17,
+      "method": "float32",
+      "bits": 32,
+      "status": "PASS"
+    },
+    {
+      "seed": 17,
+      "method": "weight-mse",
+      "bits": 8,
+      "status": "PASS"
+    },
+    {
+      "seed": 17,
+      "method": "calibration-logits",
+      "bits": 8,
+      "status": "PASS"
+    },
+    {
+      "seed": 17,
+      "method": "weight-mse",
+      "bits": 4,
+      "status": "PASS"
+    },
+    {
+      "seed": 17,
+      "method": "calibration-logits",
+      "bits": 4,
+      "status": "PASS"
+    },
+    {
+      "seed": 17,
+      "method": "weight-mse",
+      "bits": 3,
+      "status": "PASS"
+    },
+    {
+      "seed": 17,
+      "method": "calibration-logits",
+      "bits": 3,
+      "status": "PASS"
+    },
+    {
+      "seed": 43,
+      "method": "float32",
+      "bits": 32,
+      "status": "PASS"
+    },
+    {
+      "seed": 43,
+      "method": "weight-mse",
+      "bits": 8,
+      "status": "PASS"
+    },
+    {
+      "seed": 43,
+      "method": "calibration-logits",
+      "bits": 8,
+      "status": "PASS"
+    },
+    {
+      "seed": 43,
+      "method": "weight-mse",
+      "bits": 4,
+      "status": "PASS"
+    },
+    {
+      "seed": 43,
+      "method": "calibration-logits",
+      "bits": 4,
+      "status": "PASS"
+    },
+    {
+      "seed": 43,
+      "method": "weight-mse",
+      "bits": 3,
+      "status": "PASS"
+    },
+    {
+      "seed": 43,
+      "method": "calibration-logits",
+      "bits": 3,
+      "status": "PASS"
+    },
+    {
+      "seed": 91,
+      "method": "float32",
+      "bits": 32,
+      "status": "PASS"
+    },
+    {
+      "seed": 91,
+      "method": "weight-mse",
+      "bits": 8,
+      "status": "PASS"
+    },
+    {
+      "seed": 91,
+      "method": "calibration-logits",
+      "bits": 8,
+      "status": "PASS"
+    },
+    {
+      "seed": 91,
+      "method": "weight-mse",
+      "bits": 4,
+      "status": "PASS"
+    },
+    {
+      "seed": 91,
+      "method": "calibration-logits",
+      "bits": 4,
+      "status": "PASS"
+    },
+    {
+      "seed": 91,
+      "method": "weight-mse",
+      "bits": 3,
+      "status": "PASS"
+    },
+    {
+      "seed": 91,
+      "method": "calibration-logits",
+      "bits": 3,
+      "status": "PASS"
+    }
+  ],
+  "checks_per_model": [
+    "independent Python-integer decoding",
+    "independent matrix forward",
+    "exact prediction parity",
+    "accuracy recomputation",
+    "actual NPZ and payload bytes",
+    "test logit MSE"
+  ],
+  "checks_per_seed": [
+    "three partitions disjoint/full coverage",
+    "split identity SHA",
+    "dataset SHA",
+    "float baseline >=93%"
+  ],
+  "calibration_checks": "stored grid argmin and independently recomputed calibration output MSE",
+  "mse_comparison_tolerance": {
+    "relative": 1e-05,
+    "absolute": 1e-08,
+    "basis": "float32 matmul reconstruction may differ in last-bit reduction; label equality remains exact"
+  }
+}

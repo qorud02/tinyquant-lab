@@ -1,0 +1,30 @@
+TinyQuant Lab source is licensed under MIT; see LICENSE.
+
+Dataset attribution
+-------------------
+Optical Recognition of Handwritten Digits, E. Alpaydin and C. Kaynak (1998).
+UCI Machine Learning Repository: https://doi.org/10.24432/C50P49
+Dataset page: https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits
+Dataset license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License text: https://creativecommons.org/licenses/by/4.0/
+
+The bundled dataset/digits.csv.gz file is copied unchanged from scikit-learn
+1.9.1. Its source URL and SHA-256 are in dataset/provenance.json. The experiment
+normalizes feature values by dividing pixels by 16 and creates seeded random
+partitions; the cached source file remains unchanged.
+
+scikit-learn attribution
+-----------------------
+Copyright (c) 2007-2026 The scikit-learn developers.
+scikit-learn is distributed under the BSD 3-Clause license. The original
+notice and license are preserved in dataset/LICENSE.scikit-learn.txt.
+Upstream: https://github.com/scikit-learn/scikit-learn/tree/1.9.1
+
+Concept reference
+-----------------
+Jinuk Kim and coauthors, GuidedQuant: Large Language Model Quantization via
+Exploiting End Loss Guidance, ICML 2025.
+https://proceedings.mlr.press/v267/kim25d.html
+
+TinyQuant Lab implements its own NumPy classifier, clipping search, bit packing
+and measurements. This repository includes no GuidedQuant implementation code.
